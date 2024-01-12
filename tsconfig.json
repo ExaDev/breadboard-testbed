@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+		"esModuleInterop": true,
+		"lib": [
+			"ES2022",
+			"DOM"
+		],
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"outDir": "dist",
+		"paths": {
+			"@google-labs/breadboard": [
+				"node_modules/@google-labs/breadboard/src/index.ts"
+			],
+			"@google-labs/breadboard/*": [
+				"node_modules/@google-labs/breadboard/src/*",
+				"node_modules/@google-labs/breadboard/src/*/index.ts"
+			]
+		},
+		"removeComments": true,
+		"target": "ES2015"
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}

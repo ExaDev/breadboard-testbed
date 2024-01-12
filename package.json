@@ -1,0 +1,37 @@
+{
+	"dependencies": {
+		"@google-labs/breadboard": "./node_modules/breadboard-ai/packages/breadboard",
+		"@google-labs/tsconfig": "./node_modules/breadboard-ai/core/tsconfig",
+		"breadboard-ai": "github:ExaDev-io/breadboard"
+	},
+	"devDependencies": {
+		"tsx": "^4.7.0",
+		"typescript": "^5.3.3",
+		"wireit": "^0.14.3"
+	},
+	"name": "breadboard-testbed",
+	"scripts": {
+		"build": "wireit",
+		"check": "wireit",
+		"test": "wireit",
+		"validate": "wireit"
+	},
+	"type": "module",
+	"wireit": {
+		"build": {
+			"command": "tsc --pretty --ListFiles"
+		},
+		"check": {
+			"command": "npm run build -- --noEmit"
+		},
+		"test": {
+			"command": "tsx ./src/index.ts"
+		},
+		"validate": {
+			"dependencies": [
+				"check",
+				"build"
+			]
+		}
+	}
+}
