@@ -1,7 +1,7 @@
 {
 	"dependencies": {
-		"@google-labs/breadboard": "./node_modules/breadboard-ai/packages/breadboard",
-		"@google-labs/tsconfig": "./node_modules/breadboard-ai/core/tsconfig",
+    "@google-labs/breadboard": "file:node_modules/breadboard-ai/packages/breadboard",
+    "@google-labs/tsconfig": "file:node_modules/breadboard-ai/core/tsconfig",
 		"breadboard-ai": "github:ExaDev-io/breadboard"
 	},
 	"devDependencies": {
