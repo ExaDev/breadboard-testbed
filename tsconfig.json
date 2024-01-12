@@ -23,11 +23,6 @@
 		"target": "ES2015"
 	},
 	"include": [
-		"src/**/*.ts"
-	],
-	"references": [
-		{
-			"path": "./node_modules/@google-labs/breadboard"
-		}
+    "src/**/*.ts"
 	]
 }
