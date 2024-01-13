@@ -8,7 +8,9 @@
     "@types/node": "^20.11.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
-    "wireit": "^0.14.3"
+		"wireit": "^0.14.3",
+		"node": ">19",
+		"npm": ">10"
   },
   "engines": {
     "node": ">=19"
